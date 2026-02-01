@@ -209,14 +209,20 @@ const darkTheme = {
     primaryColor: '#000000',
     secondaryColor: '#22272e',
     textColor: '#ffffff',
-    accentColor: '#00ff00'
+    accentColor: '#00ff00',
+    sectionBg: 'rgba(0, 0, 0, 0.8)',
+    cardBg: 'rgba(255, 255, 255, 0.1)',
+    cardBorder: 'rgba(255, 255, 255, 0.1)'
 };
 
 const lightTheme = {
     primaryColor: '#f5f5f5',
     secondaryColor: '#e0e0e0',
     textColor: '#333333',
-    accentColor: '#00aa00'
+    accentColor: '#008800',
+    sectionBg: 'rgba(255, 255, 255, 0.9)',
+    cardBg: 'rgba(0, 0, 0, 0.05)',
+    cardBorder: 'rgba(0, 0, 0, 0.1)'
 };
 
 // Function to toggle theme
@@ -231,6 +237,9 @@ function toggleTheme() {
     root.style.setProperty('--secondary-color', theme.secondaryColor);
     root.style.setProperty('--text-color', theme.textColor);
     root.style.setProperty('--accent-color', theme.accentColor);
+    root.style.setProperty('--section-bg', theme.sectionBg);
+    root.style.setProperty('--card-bg', theme.cardBg);
+    root.style.setProperty('--card-border', theme.cardBorder);
     
     // Toggle icon
     if (isDarkTheme) {
@@ -324,10 +333,8 @@ function setActiveNavLink() {
 function styleNavbar() {
   const navbar = document.querySelector('.navbar');
   if (window.scrollY > 50) {
-    navbar.style.background = 'rgba(0, 0, 0, 0.95)';
     navbar.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.3)';
   } else {
-    navbar.style.background = 'rgba(0, 0, 0, 0.8)';
     navbar.style.boxShadow = 'none';
   }
 }
