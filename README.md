@@ -2,7 +2,7 @@
 
 # 👋 Hi, I'm Knight
 
-**Software Engineer · Full-Stack Developer · IT Systems Specialist**
+**Full-Stack Developer · IT Systems Specialist**
 
 Building modern web solutions, integrating systems, and automating the boring parts.
 
